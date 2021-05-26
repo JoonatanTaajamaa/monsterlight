@@ -1,0 +1,33 @@
+{
+  "name": "monsterlight",
+  "version": "0.9.0",
+  "description": "Monsteri peli.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Playerguy23/monsterlight.git"
+  },
+  "keywords": [
+    "monster",
+    "game",
+    "peli",
+    "moninpeli",
+    "multiplayer"
+  ],
+  "author": "Joonatan Taajamaa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Playerguy23/monsterlight/issues"
+  },
+  "homepage": "https://github.com/Playerguy23/monsterlight#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "socket.io": "^4.0.0",
+    "uuid": "^8.3.2"
+  }
+}

@@ -1,0 +1,98 @@
+.radio-toolbar {
+    text-align: center;
+}
+
+.radio-toolbar input[type="radio"] {
+    opacity: 0;
+    position: relative;
+    width: 0;
+}
+
+.radio-toolbar label {
+    display: inline-block;
+    background-color: #488fab;
+    padding: 15px 15px;
+    width: 200px;
+    font-size: 30px;
+    margin-left: 10px;
+    vertical-align: top;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.radio-toolbar input[type="radio"]:checked + label {
+    border: 1px solid #255a6f;
+    background-color:#bfb;
+}
+
+.radio-toolbar label:hover {
+    border: 1px solid #255a6f;
+    background-color:#3b6394;
+}
+
+.basic-button {
+    font-size: 25px;
+    padding: 15px 15px;
+    border: 0px;
+
+    border-radius: 15px;
+    background-color: #62bccc;
+    cursor: pointer;
+    box-shadow: 1px 2px 4px black;
+}
+
+.basic-button:hover {
+    color: white;
+    background-color: black;
+    transition: 0.3s ease-out;
+}
+
+.basic-button:disabled {
+    background-color: #818282;
+}
+
+.margin-30px-left {
+    margin-left: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.basic-title {
+    font-size: 60px;
+    color: #40b38c;
+    text-shadow: 1px 1px 2px black;
+}
+
+.under-title {
+    font-size: 50px;
+    color: #409eb3;
+    text-shadow: 1px 1px 2px black;
+}
+
+.basic-message {
+    font-size: 40px;
+    color: #40b38c;
+    text-shadow: 1px 1px 2px black;
+}
+
+.loose-message {
+    color: #b0354f;
+    font-size: 60px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.win-message {
+    color: #3eb57d;
+    font-size: 50px;
+    text-shadow: 1px 1px 2px black;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    font-size: 12px;
+}

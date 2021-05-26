@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Koti</title>
+
+        <link rel="stylesheet" href="/public/styles/basicStyles.css">
+    </head>
+
+    <body class="text-center">
+        <h1 class="basic-title">Monsterlight</h1>
+        <form action="/game" method="post" class="text-center">
+            <h2 class="under-title">Valitse monsteri</h2>
+            <div class="radio-toolbar">
+                <% for (let monsterName in monsters) { %>
+                    <input id="<%= monsterName %>-input" type="radio" name="monster" value="<%= monsterName %>">
+                    <label for="<%= monsterName %>-input">
+                        <img src="<%= monsters[monsterName].imagePath %>" alt="" width="100" height="100">
+                        <%
+                            const monserTitle =
+                                `${monsterName.substring(0, 1).toUpperCase()}${monsterName.substring(1)}` 
+                        %>
+                        <p><%= monserTitle %></p>
+                    </label>
+                <% } %>
+                <br>
+            </div>
+            
+            <button class="basic-button" type="submit">Aloita peli</button>
+            <footer>© Tekijä Joonatan Taajamaa</footer>
+        </form>
+    </body>
+
+</html>
